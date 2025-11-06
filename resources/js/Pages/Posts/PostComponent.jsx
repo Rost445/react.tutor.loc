@@ -4,7 +4,7 @@ export default function PostComponent()
 {
     return(
         <div className="">
-            <h1>Post Component</h1>
+            <h1>Post Controller Index Component</h1>
         </div>
     )
 }
