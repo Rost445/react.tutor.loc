@@ -7,6 +7,10 @@ export default class NewComponent extends Component {
         phone: '+380660198521',
         skills: ['react','vue','laravel']
     }
+
+    handleClick=(e=>{
+        console.log('Кнопка натиснута!');
+    })
     render() {
         return (
             <div >
@@ -20,6 +24,7 @@ export default class NewComponent extends Component {
                     <li>phone: {this.state.phone}</li>
                     <li>skills: {this.state.skills.join(', ')}</li>
                 </ul>
+                <button type="button" onClick={this.handleClick}>Натиснути тут</button>
             </div>
         );
     }
